@@ -40,5 +40,3 @@ A análise de Heatmap revelou que:
 **Autor:** Breno Martins
 *Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/brenomartins31/)*
 ---
-**Autor:** Breno Martins
-*Conecte-se comigo no [LinkedIn](SEU LINK DO LINKEDIN AQUI)*
