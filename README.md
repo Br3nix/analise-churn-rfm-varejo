@@ -23,7 +23,7 @@ Utilizando a metodologia RFM (Recência, Frequência, Monetário), dividimos a b
 * **Campeões:** Compram frequentemente e gastaram muito recentemente.
 * **Em Risco:** Clientes antigos de alto valor que pararam de comprar.
 * **Hibernantes:** Clientes de baixo valor e inativos.
-*(Aqui você pode colocar o seu gráfico de barras)*
+*(https://github.com/Br3nix/analise-churn-rfm-varejo/blob/main/Clientes%20por%20Segmento.png)*
 
 ### 2. Análise de Coorte (Retenção)
 A análise de Heatmap revelou que:
