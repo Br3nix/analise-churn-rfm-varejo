@@ -19,16 +19,38 @@ A empresa possui uma base de +800 mil transações, mas carecia de visibilidade 
 ## 🔍 Principais Insights
 
 ### 1. Segmentação RFM
-Utilizando a metodologia RFM (Recência, Frequência, Monetário), dividimos a base em grupos estratégicos.
-* **Campeões:** Compram frequentemente e gastaram muito recentemente.
-* **Em Risco:** Clientes antigos de alto valor que pararam de comprar.
-* **Hibernantes:** Clientes de baixo valor e inativos.
-*(https://github.com/Br3nix/analise-churn-rfm-varejo/blob/main/Clientes%20por%20Segmento.png?raw=true)*
+Utilizando a metodologia **RFM (Recência, Frequência e Monetário)**, a base de clientes foi segmentada em grupos estratégicos com comportamentos distintos de compra.
+
+- **Hibernantes:**  
+  Representam a maior parte da base, com mais de 3.000 clientes. São clientes que compraram poucas vezes e há muito tempo, encontrando-se atualmente inativos. Esse grupo exige uma decisão estratégica entre investir em ações de reativação ou priorizar segmentos mais rentáveis.
+
+- **Fiéis:**  
+  Segundo maior segmento, com pouco menos de 2.000 clientes. Compram com frequência e são fundamentais para a geração de receita recorrente, mesmo não apresentando níveis de gasto ou recência tão elevados quanto os Campeões.
+
+- **Campeões:**  
+  Grupo menor, com cerca de 750 clientes, composto por clientes de alto valor que compram frequentemente, gastam mais e realizaram compras recentes. Apesar de representarem uma parcela menor da base, são estratégicos e devem ser priorizados para retenção e expansão.
+
+- **Novos Promissores:**  
+  Menor segmento da base. São clientes recentes com potencial de crescimento, mas que ainda não demonstraram frequência ou valor elevado. O tamanho reduzido desse grupo pode indicar desafios na aquisição ou na retenção inicial de novos clientes.
+*![Image Alt](https://github.com/Br3nix/analise-churn-rfm-varejo/blob/main/Clientes%20por%20Segmento.png?raw=true)*
 
 ### 2. Análise de Coorte (Retenção)
-A análise de Heatmap revelou que:
-* A retenção imediata (Mês 1) caiu drasticamente de 2009 para 2011, indicando problemas na aquisição recente.
-* Existe uma **sazonalidade anual forte**: Clientes tendem a retornar no mês 11/12 (Novembro/Dezembro), sugerindo comportamento de compra natalina.
+O heatmap de retenção revelou padrões críticos sobre o comportamento do consumidor e a saúde do negócio:
+
+**1. O Fenômeno da "Ressurreição Sazonal":**
+Identificamos um comportamento atípico na coorte de 2009-12. A retenção, que operava na casa dos 35%, saltou para **50% no 12º mês** (Dezembro/2010).
+* **Conclusão:** O produto possui forte apelo sazonal (presentes). Clientes "hibernam" durante o ano e reativam organicamente no Natal.
+* **Estratégia:** Concentrar o budget de retenção em campanhas de "Reativação Antecipada" em Outubro/Novembro.
+
+**2. Degradação da Qualidade da Aquisição (Safra):**
+Houve uma queda preocupante na qualidade dos novos clientes.
+* **Safra 2009:** Retenção imediata de **35%**.
+* **Safra 2010:** Retenção imediata de apenas **9%**.
+* **Conclusão:** A estratégia de aquisição de 2010 trouxe volume, mas falhou em trazer clientes qualificados (LTV baixo).
+
+**3. O Gargalo do Primeiro Mês:**
+Em média, **80% dos clientes** não retornam após a primeira compra (Churn Imediato). Isso indica uma falha crítica no *Onboarding* ou na experiência inicial.
+*![Image Alt](https://github.com/Br3nix/analise-churn-rfm-varejo/blob/main/Heatmap.jpeg?raw=true)*
 
 ## 🚀 Como Executar o Projeto
 1. Clone este repositório.
